@@ -54,6 +54,8 @@ public class control_Triangulo {
 					case 2: 
 						System.out.print("El tri�ngulo es equil�tero y");
 						break;
+//					default:
+//						return null;
 					}
 					for (int i=0;i<3;i++) {
 						

@@ -5,7 +5,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		String cadena="";
-		Scanner teclado = new Scanner(System.in);
+		Scanner teclado = new Scanner(System.in, "UTF-8");
 		System.out.println("Escriba los lados de los lados separados por comas");
 		cadena=teclado.nextLine();
 		String[] lados=cadena.split(",");
@@ -18,7 +18,7 @@ public class Main {
 		}else {
 			System.out.println("Se ha podido crear el triangulo correctamente.");
 		}
-
+		teclado.close();
 	}
 	
 }
