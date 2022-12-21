@@ -12,19 +12,13 @@ public class Main {
 		System.out.println("Escriba los �ngulos de los lados separados por comas");
 		cadena=teclado.nextLine();
 		String[] angulos=cadena.split(",");
-		try {
-			Triangulo t=control_Triangulo.saberTipo(lados,angulos);
-			if(t==null) {
-				System.out.println("No se ha podido crear el triangulo.");
-			}else {
-				System.out.println("Se ha podido crear el triangulo correctamente.");
-			}
-		} catch (NumberFormatException e) {
-			System.out.println("Se ha introducido un car�cter no num�rico");
-		} catch (NumeroNegativoException e) {
-			System.out.println(e.getMessage());
-			
+		Triangulo t=control_Triangulo.saberTipo(lados,angulos);
+		if(t==null) {
+			System.out.println("No se ha podido crear el triangulo.");
+		}else {
+			System.out.println("Se ha podido crear el triangulo correctamente.");
 		}
+
 	}
 	
 }
